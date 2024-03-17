@@ -5,7 +5,8 @@
 package dangnhap2;
 
 import javax.swing.JOptionPane;
-import quanlicuahang3.Menu;
+import quanlicuahang3.Menu_admin;
+import quanlicuahang3.Menu_nhanvien;
 
 /**
  *
@@ -143,26 +144,48 @@ public class FormLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jTendangnhapActionPerformed
 
     private void jButtonDangnhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDangnhapActionPerformed
-  if(jTendangnhap.getText().equals(""))
-    {   
-        JOptionPane.showMessageDialog(this, " Email should not be empty !", " Error", JOptionPane.ERROR_MESSAGE);
-    }
-    else if (jPassword.getText().equals(""))
-    {
-        JOptionPane.showMessageDialog(this, " Password should not be empty !", " Error", JOptionPane.ERROR_MESSAGE);
-    }
-    else if(jTendangnhap.getText().contains("admin") && jPassword.getText().contains("2024"))
-    {
-//        JOptionPane.showMessageDialog(this, " Login successfully !");
-        Menu m = new Menu();
-        m.setVisible(true);
-        m.pack();
-        m.setLocationRelativeTo(null);
-        this.dispose();
-    }
-    else{
-        JOptionPane.showMessageDialog(this, " Wrong Email or Password !", " Error", JOptionPane.ERROR_MESSAGE);
-    }                                      
+String email = jTendangnhap.getText();
+        String password = new String (jPassword.getPassword());
+        
+        StringBuilder sb = new StringBuilder();
+        if(email.equals("")){
+            sb.append("Please Enter Email !\n");
+            
+        }
+        if(password.equals("")){
+            sb.append("Please Enter Password ! \n");
+        }
+        if(sb.length()>0){
+            JOptionPane.showMessageDialog(this,sb.toString(),"Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        try{
+        if(email.equals("nhanvien") && password.equals("2024")){
+            int user = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+            if(user == 0){
+                    this.dispose();
+                    Menu_nhanvien mnv = new Menu_nhanvien();
+                    mnv.setVisible(true);
+                    mnv.pack();
+                    mnv.setLocationRelativeTo(null);
+                    this.dispose();
+            }
+        }else if(email.equals("admin") && password.equals("2024")){
+            int admin = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+            if(admin == 0){
+                    this.dispose();
+                    Menu_admin ma = new Menu_admin();
+                    ma.setVisible(true);
+                    ma.pack();
+                    ma.setLocationRelativeTo(null);
+                    this.dispose();
+            }
+        }else{
+            JOptionPane.showConfirmDialog(this,"Email or Password not correct !", "Failure !", JOptionPane.ERROR_MESSAGE);
+        }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_jButtonDangnhapActionPerformed
 
     private void jShowPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jShowPassActionPerformed
