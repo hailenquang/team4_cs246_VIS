@@ -48,7 +48,7 @@ public class FormLogin extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/logo2.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/logo login.jpg"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Tên đăng nhập :");
@@ -62,7 +62,7 @@ public class FormLogin extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setText("Mật khẩu :");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/loginchinh.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ảnh đăng nhập, đăng kí.jpg"))); // NOI18N
 
         jShowPass.setBackground(new java.awt.Color(255, 255, 255));
         jShowPass.setForeground(new java.awt.Color(102, 102, 102));
@@ -179,7 +179,8 @@ String email = jTendangnhap.getText();
         }
         try{
         if(email.equals("nhanvien") && password.equals("2024")){
-            int user = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+            int user = 0;
+//           int user = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
             if(user == 0){
                     this.dispose();
                     Menu_nhanvien mnv = new Menu_nhanvien();
@@ -189,7 +190,8 @@ String email = jTendangnhap.getText();
                     this.dispose();
             }
         }else if(email.equals("admin") && password.equals("2024")){
-            int admin = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+            int admin = 0;
+//            int admin = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
             if(admin == 0){
                     this.dispose();
                     Menu_admin ma = new Menu_admin();

@@ -78,10 +78,10 @@ public class Menu_admin extends javax.swing.JFrame {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/staff2.png"))); // NOI18N
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon nhân viên.png"))); // NOI18N
         jMenu1.setText("Quản lí nhân viên");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Add.png"))); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon thêm nv.png"))); // NOI18N
         jMenuItem1.setText("Thêm/Xóa NV");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +90,7 @@ public class Menu_admin extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon danh sách.png"))); // NOI18N
         jMenuItem2.setText("Danh sách NV");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,10 +101,10 @@ public class Menu_admin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/open1.png"))); // NOI18N
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon sản phẩm.png"))); // NOI18N
         jMenu2.setText("Quản lí sản phẩm");
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Add.png"))); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon thêm sp.png"))); // NOI18N
         jMenuItem5.setText("Thêm/Xóa sản phẩm");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +113,7 @@ public class Menu_admin extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem5);
 
-        jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
+        jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon danh sách.png"))); // NOI18N
         jMenuItem9.setText("Danh sách sản phẩm");
         jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,10 +124,10 @@ public class Menu_admin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon quản lí đơn hàng.png"))); // NOI18N
         jMenu3.setText("Quản lí đơn hàng");
 
-        jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/save.png"))); // NOI18N
+        jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon xử lí đơn hàng.png"))); // NOI18N
         jMenuItem10.setText("Xử lí đơn hàng");
         jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +136,7 @@ public class Menu_admin extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem10);
 
-        jMenuItem11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/open.png"))); // NOI18N
+        jMenuItem11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon tình trạng đơn hàng.png"))); // NOI18N
         jMenuItem11.setText("Tình trạng đơn hàng");
         jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,10 +147,10 @@ public class Menu_admin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/users.png"))); // NOI18N
+        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon khách hàng.png"))); // NOI18N
         jMenu4.setText("Quản lí khách hàng");
 
-        jMenuItem12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
+        jMenuItem12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon thôngtin khách hàng.png"))); // NOI18N
         jMenuItem12.setText("Thông tin khách hàng");
         jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,7 +159,7 @@ public class Menu_admin extends javax.swing.JFrame {
         });
         jMenu4.add(jMenuItem12);
 
-        jMenuItem13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/time-management (1).png"))); // NOI18N
+        jMenuItem13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon lịch sử mua hàng.png"))); // NOI18N
         jMenuItem13.setText("Lịch sử mua hàng");
         jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,10 +170,10 @@ public class Menu_admin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu4);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/revenue (1).png"))); // NOI18N
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon quản lí doanh thu.png"))); // NOI18N
         jMenu5.setText("Quản lí doanh thu");
 
-        jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/bill (1).png"))); // NOI18N
+        jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon hóa đơn bán hàng.png"))); // NOI18N
         jMenuItem14.setText("Hóa đơn bán hàng");
         jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,7 +182,7 @@ public class Menu_admin extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem14);
 
-        jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/data (1).png"))); // NOI18N
+        jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon theo dõi doanh thu.png"))); // NOI18N
         jMenuItem15.setText("Theo dõi doanh thu");
         jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,10 +193,10 @@ public class Menu_admin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
-        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/help.png"))); // NOI18N
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon hệ thống.png"))); // NOI18N
         jMenu6.setText("Hệ thống");
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/home (1).png"))); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon trang chủ.png"))); // NOI18N
         jMenuItem3.setText("Trang chủ");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,7 +205,7 @@ public class Menu_admin extends javax.swing.JFrame {
         });
         jMenu6.add(jMenuItem3);
 
-        jMenuItem16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/turn-off (1).png"))); // NOI18N
+        jMenuItem16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon đăng xuất.png"))); // NOI18N
         jMenuItem16.setText("Đăng xuất");
         jMenuItem16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

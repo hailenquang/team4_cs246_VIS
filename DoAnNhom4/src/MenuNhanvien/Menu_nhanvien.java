@@ -50,10 +50,10 @@ public class Menu_nhanvien extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/menuchinh.jpg"))); // NOI18N
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/open1.png"))); // NOI18N
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon sản phẩm.png"))); // NOI18N
         jMenu1.setText("Sản phẩm");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon danh sách.png"))); // NOI18N
         jMenuItem1.setText("Danh sách sản phẩm");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,10 +64,10 @@ public class Menu_nhanvien extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/bill (1).png"))); // NOI18N
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon hóa đơn.png"))); // NOI18N
         jMenu2.setText("Hóa đơn");
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/addnew.png"))); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon tạo hóa đơn.png"))); // NOI18N
         jMenuItem2.setText("Tạo hóa đơn");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +77,7 @@ public class Menu_nhanvien extends javax.swing.JFrame {
         jMenu2.add(jMenuItem2);
         jMenu2.add(jSeparator1);
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon hóa đơn bán hàng.png"))); // NOI18N
         jMenuItem3.setText("Hóa đơn bán hàng");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,10 +88,10 @@ public class Menu_nhanvien extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/help.png"))); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon hệ thống.png"))); // NOI18N
         jMenu3.setText("Hệ thống");
 
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/home (1).png"))); // NOI18N
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon trang chủ.png"))); // NOI18N
         jMenuItem4.setText("Trang chủ");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +101,7 @@ public class Menu_nhanvien extends javax.swing.JFrame {
         jMenu3.add(jMenuItem4);
         jMenu3.add(jSeparator2);
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/turn-off (1).png"))); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon đăng xuất.png"))); // NOI18N
         jMenuItem5.setText("Đăng xuất");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -30,11 +30,11 @@ public class FormDangKi extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/loginchinh.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ảnh đăng nhập, đăng kí.jpg"))); // NOI18N
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/logo2.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/logo login.jpg"))); // NOI18N
 
         jButtonDangKi.setBackground(new java.awt.Color(0, 0, 0));
         jButtonDangKi.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -46,6 +46,7 @@ public class FormDangKi extends javax.swing.JFrame {
             }
         });
 
+        jButtonQuayLai.setBackground(new java.awt.Color(242, 242, 242));
         jButtonQuayLai.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButtonQuayLai.setText("Quay lại");
         jButtonQuayLai.addActionListener(new java.awt.event.ActionListener() {

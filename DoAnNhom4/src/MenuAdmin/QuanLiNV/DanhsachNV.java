@@ -52,7 +52,8 @@ public class DanhsachNV extends javax.swing.JInternalFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Tìm kiếm theo tên :");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
+        jButton1.setBackground(new java.awt.Color(242, 242, 242));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon seach.png"))); // NOI18N
         jButton1.setText("Tìm kiếm");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

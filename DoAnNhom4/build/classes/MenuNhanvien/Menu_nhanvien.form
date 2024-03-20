@@ -7,7 +7,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon/open1.png"/>
+              <Image iconType="3" name="/icon/icon s&#x1ea3;n ph&#x1ea9;m.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="S&#x1ea3;n ph&#x1ea9;m"/>
           </Properties>
@@ -15,7 +15,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon/search.png"/>
+                  <Image iconType="3" name="/icon/icon danh s&#xe1;ch.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Danh s&#xe1;ch s&#x1ea3;n ph&#x1ea9;m"/>
               </Properties>
@@ -28,7 +28,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon/bill (1).png"/>
+              <Image iconType="3" name="/icon/icon h&#xf3;a &#x111;&#x1a1;n.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="H&#xf3;a &#x111;&#x1a1;n"/>
           </Properties>
@@ -36,7 +36,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon/addnew.png"/>
+                  <Image iconType="3" name="/icon/icon t&#x1ea1;o h&#xf3;a &#x111;&#x1a1;n.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="T&#x1ea1;o h&#xf3;a &#x111;&#x1a1;n"/>
               </Properties>
@@ -49,7 +49,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon/list.png"/>
+                  <Image iconType="3" name="/icon/icon h&#xf3;a &#x111;&#x1a1;n b&#xe1;n h&#xe0;ng.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#xf3;a &#x111;&#x1a1;n b&#xe1;n h&#xe0;ng"/>
               </Properties>
@@ -62,7 +62,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon/help.png"/>
+              <Image iconType="3" name="/icon/icon h&#x1ec7; th&#x1ed1;ng.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="H&#x1ec7; th&#x1ed1;ng"/>
           </Properties>
@@ -70,7 +70,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon/home (1).png"/>
+                  <Image iconType="3" name="/icon/icon trang ch&#x1ee7;.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Trang ch&#x1ee7;"/>
               </Properties>
@@ -83,7 +83,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon/turn-off (1).png"/>
+                  <Image iconType="3" name="/icon/icon &#x111;&#x103;ng xu&#x1ea5;t.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng xu&#x1ea5;t"/>
               </Properties>
