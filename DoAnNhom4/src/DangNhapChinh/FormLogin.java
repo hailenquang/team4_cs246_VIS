@@ -178,7 +178,7 @@ String email = jTendangnhap.getText();
             return;
         }
         try{
-        if(email.equals("nhanvien") && password.equals("2024")){
+        if(email.equals("nhanvien") && password.equals("1")){
             int user = 0;
 //           int user = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
             if(user == 0){
@@ -189,7 +189,7 @@ String email = jTendangnhap.getText();
                     mnv.setLocationRelativeTo(null);
                     this.dispose();
             }
-        }else if(email.equals("admin") && password.equals("2024")){
+        }else if(email.equals("admin") && password.equals("1")){
             int admin = 0;
 //            int admin = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
             if(admin == 0){
