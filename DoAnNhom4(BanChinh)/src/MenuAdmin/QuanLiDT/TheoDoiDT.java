@@ -19,17 +19,24 @@ public class TheoDoiDT extends javax.swing.JInternalFrame {
         card1.setData(new ModelCard("Thu nhập", "$ 60,000", "Tổng Thu nhập"));
         card2.setData(new ModelCard("Chi phí", "$ 10,000", "Tổng Chi phí"));
         card3.setData(new ModelCard("Lợi nhuận", "$ 20,000", "Tổng lợi nhuận"));
-        card4.setData(new ModelCard("Giá niêm yết", "$ 30,000", "Tổng Giá niêm yết"));
-        chart.addLegend("Thu nhập", new Color(12, 84, 175), new Color(0, 108, 247));
+        card4.setData(new ModelCard("Giá cost", "$ 30,000", "Tổng Giá cost"));
+        chart.addLegend("Thu nhập", new Color(5, 125, 0), new Color(95, 209, 69));
         chart.addLegend("Chi phí", new Color(54, 4, 143), new Color(104, 49, 200));
-        chart.addLegend("Lợi nhuận", new Color(5, 125, 0), new Color(95, 209, 69));
+        chart.addLegend("Lợi nhuận", new Color(12, 84, 175 ), new Color(0, 108, 247));
         chart.addLegend("Giá niêm yết", new Color(186, 37, 37), new Color(241, 100, 120));
-        chart.addData(new ModelChart("January", new double[]{500, 200, 80, 89}));
-        chart.addData(new ModelChart("February", new double[]{600, 750, 90, 150}));
+        chart.addData(new ModelChart("January", new double[]{700, 100, 250, 350}));
+        chart.addData(new ModelChart("February", new double[]{500, 50, 200, 250}));
         chart.addData(new ModelChart("March", new double[]{200, 350, 460, 900}));
-        chart.addData(new ModelChart("April", new double[]{480, 150, 750, 700}));
-        chart.addData(new ModelChart("May", new double[]{350, 540, 300, 150}));
-        chart.addData(new ModelChart("June", new double[]{190, 280, 81, 200}));
+        chart.addData(new ModelChart("April", new double[]{300, 150, 750, 700}));
+        chart.addData(new ModelChart("May", new double[]{600, 30, 70, 100}));
+        chart.addData(new ModelChart("June", new double[]{800, 150, 250, 400}));
+        chart.addData(new ModelChart("July", new double[]{400, 50, 150, 200}));
+        chart.addData(new ModelChart("August", new double[]{300, 50, 100, 150}));
+        chart.addData(new ModelChart("September", new double[]{250, 50, 75, 125}));
+        chart.addData(new ModelChart("October", new double[]{700, 100, 250, 350}));
+        chart.addData(new ModelChart("November", new double[]{900, 150, 300, 450}));
+        chart.addData(new ModelChart("December", new double[]{350, 50, 125, 175}));
+        
         chart.start();
         }
     @SuppressWarnings("unchecked")
@@ -82,17 +89,15 @@ public class TheoDoiDT extends javax.swing.JInternalFrame {
                         .addComponent(jLabel1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(panel2Layout.createSequentialGroup()
-                        .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panel2Layout.createSequentialGroup()
-                                .addComponent(card1, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(card2, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(card3, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(card4, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE))
-                            .addComponent(chart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(card1, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(card2, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(card3, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(card4, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
                         .addGap(30, 30, 30))))
+            .addComponent(chart, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel2Layout.setVerticalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
