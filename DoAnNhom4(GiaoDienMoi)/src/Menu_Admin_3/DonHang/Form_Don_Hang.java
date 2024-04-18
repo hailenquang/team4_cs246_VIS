@@ -2,19 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package Menu_Admin_3.NhanVien;
+package Menu_Admin_3.DonHang;
 
 /**
  *
  * @author Hoàng Thanh An
  */
-public class Form_Nhan_Vien extends javax.swing.JPanel {
+public class Form_Don_Hang extends javax.swing.JPanel {
 
     /**
-     * Creates new form Form_Nhan_Vien
+     * Creates new form Form_Don_Hang
      */
-    public Form_Nhan_Vien() {
+    public Form_Don_Hang() {
         initComponents();
+        setOpaque(false);
+
     }
 
     /**
@@ -28,25 +30,23 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(244, 244, 244));
-
-        jLabel1.setText("form nhan vien");
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(521, 521, 521)
-                .addComponent(jLabel1)
-                .addContainerGap(481, Short.MAX_VALUE))
+                .addGap(338, 338, 338)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(355, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(280, 280, 280)
-                .addComponent(jLabel1)
-                .addContainerGap(313, Short.MAX_VALUE))
+                .addGap(171, 171, 171)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(349, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -6,6 +6,9 @@ import Menu_Admin_3.SanPham.Form_San_Pham;
 import Menu_Admin_3.DoanhThu.Form_Doanh_Thu;
 import Menu_Admin_3.NhanVien.Form_Nhan_Vien;
 import Menu_Admin_3.DoanhThu.model.ModelMenu;
+import Menu_Admin_3.DonHang.Form_Don_Hang;
+import Menu_Admin_3.HeThong.Form_He_Thong;
+import Menu_Admin_3.KhachHang.Form_Khach_Hang;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
@@ -52,15 +55,17 @@ public class Menu_admin extends javax.swing.JFrame {
         menu.setEvent((int index) -> {
             switch (index) {
                 case 0 ->
-                    showForm(new Form_Doanh_Thu());
+                    showForm(new Form_Nhan_Vien());
                 case 1 ->
                     showForm(new Form_San_Pham());
                 case 2 ->
-                    showForm(new Form_Nhan_Vien());
+                    showForm(new Form_Don_Hang());
                 case 3 ->
-                    showForm(new Form_San_Pham());
+                    showForm(new Form_Khach_Hang());
                 case 4 ->
                     showForm(new Form_Doanh_Thu());
+                case 5 ->
+                    showForm(new Form_He_Thong());
                 default -> {
                 }
             }

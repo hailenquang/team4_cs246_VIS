@@ -2,19 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package Menu_Admin_3.NhanVien;
+package Menu_Admin_3.HeThong;
 
 /**
  *
  * @author Hoàng Thanh An
  */
-public class Form_Nhan_Vien extends javax.swing.JPanel {
+public class Form_He_Thong extends javax.swing.JPanel {
 
     /**
-     * Creates new form Form_Nhan_Vien
+     * Creates new form Form_He_Thong
      */
-    public Form_Nhan_Vien() {
+    public Form_He_Thong() {
         initComponents();
+        setOpaque(false);
+
     }
 
     /**
@@ -26,32 +28,40 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(244, 244, 244));
-
-        jLabel1.setText("form nhan vien");
+        jButton1.setText("Thoát");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(521, 521, 521)
-                .addComponent(jLabel1)
-                .addContainerGap(481, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jButton1)
+                .addContainerGap(993, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(280, 280, 280)
-                .addComponent(jLabel1)
-                .addContainerGap(313, Short.MAX_VALUE))
+                .addGap(24, 24, 24)
+                .addComponent(jButton1)
+                .addContainerGap(580, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
