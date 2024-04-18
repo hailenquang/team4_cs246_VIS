@@ -2,19 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package Menu_Admin_3.NhanVien;
+package Menu_Admin_3.KhachHang;
 
 /**
  *
  * @author Hoàng Thanh An
  */
-public class Form_Nhan_Vien extends javax.swing.JPanel {
+public class Form_Khach_Hang extends javax.swing.JPanel {
 
     /**
-     * Creates new form Form_Nhan_Vien
+     * Creates new form Form_Khach_Hang
      */
-    public Form_Nhan_Vien() {
+    public Form_Khach_Hang() {
         initComponents();
+        setOpaque(false);
+
     }
 
     /**
@@ -28,25 +30,23 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(244, 244, 244));
-
-        jLabel1.setText("form nhan vien");
+        jLabel1.setText("form khách hàng");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(521, 521, 521)
+                .addGap(476, 476, 476)
                 .addComponent(jLabel1)
                 .addContainerGap(481, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(280, 280, 280)
+                .addGap(266, 266, 266)
                 .addComponent(jLabel1)
-                .addContainerGap(313, Short.MAX_VALUE))
+                .addContainerGap(344, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
