@@ -1,6 +1,6 @@
 package Menu_Admin_3.DonHang;
 
-import com.raven.model.ModelCard;
+import Menu_Admin_3.DonHang.model.ModelCard;
 import java.awt.Color;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
@@ -45,7 +45,7 @@ public class Card extends javax.swing.JPanel {
         lbTitle = new javax.swing.JLabel();
         lbValues = new javax.swing.JLabel();
         lbIcon = new javax.swing.JLabel();
-        pro = new com.raven.swing.ProgressBarCustom();
+        pro = new Menu_Admin_3.DonHang.swing2.ProgressBarCustom();
         lbPer = new javax.swing.JLabel();
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -115,6 +115,6 @@ public class Card extends javax.swing.JPanel {
     private javax.swing.JLabel lbPer;
     private javax.swing.JLabel lbTitle;
     private javax.swing.JLabel lbValues;
-    private com.raven.swing.ProgressBarCustom pro;
+    private Menu_Admin_3.DonHang.swing2.ProgressBarCustom pro;
     // End of variables declaration//GEN-END:variables
 }

@@ -95,7 +95,7 @@
         <Property name="horizontalAlignment" type="int" value="4"/>
       </Properties>
     </Component>
-    <Component class="com.raven.swing.ProgressBarCustom" name="pro">
+    <Component class="Menu_Admin_3.DonHang.swing2.ProgressBarCustom" name="pro">
     </Component>
     <Component class="javax.swing.JLabel" name="lbPer">
       <Properties>
