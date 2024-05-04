@@ -1,6 +1,6 @@
 package Menu_Admin_3.DonHang;
 
-import Menu_Admin_3.DonHang.model.ModelCard;
+import com.raven.model.ModelCard;
 import java.awt.Color;
 import java.awt.GradientPaint;
 import java.awt.Graphics;

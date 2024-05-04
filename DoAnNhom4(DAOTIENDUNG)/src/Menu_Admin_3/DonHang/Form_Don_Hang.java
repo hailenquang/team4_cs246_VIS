@@ -4,11 +4,11 @@
  */
 package Menu_Admin_3.DonHang;
 
-import Menu_Admin_3.DonHang.model.ModelCard;
-import Menu_Admin_3.DonHang.model.ModelStudent;
-import Menu_Admin_3.DonHang.swing.icon.GoogleMaterialDesignIcons;
-import Menu_Admin_3.DonHang.swing.icon.IconFontSwing;
-import Menu_Admin_3.DonHang.swing.table.EventAction;
+import com.raven.model.ModelCard;
+import com.raven.model.ModelStudent;
+import com.raven.swing.icon.GoogleMaterialDesignIcons;
+import com.raven.swing.icon.IconFontSwing;
+import com.raven.swing.table.EventAction;
 import java.awt.Color;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -110,7 +110,7 @@ public class Form_Don_Hang extends javax.swing.JPanel {
         card16 = new Menu_Admin_3.DonHang.Card();
         card7 = new Menu_Admin_3.DonHang.Card();
         jScrollPane1 = new javax.swing.JScrollPane();
-        table1 = new Menu_Admin_3.DonHang.swing.table.Table();
+        table1 = new com.raven.swing.table.Table();
         card1 = new Menu_Admin_3.DonHang.Card();
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
@@ -356,31 +356,31 @@ public class Form_Don_Hang extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        String Name = jTextField1.getText();
-        String Gender = jTextField2.getText();
-        String phone = jTextField3.getText();
-        String product = jTextField4.getText();
-        String pri = jTextField5.getText();
-        String time = jTextField6.getText();
-        
-        if (Name.isEmpty() || Gender.isEmpty() || phone.isEmpty() || product.isEmpty() || pri.isEmpty() || time.isEmpty() ) {
-            JOptionPane.showMessageDialog(this,
-                " Please enter all fields ! ",
-                " Try again ! ",
-                JOptionPane.ERROR_MESSAGE);
-        }   else {
-            DefaultTableModel model = (DefaultTableModel) table1.getModel();
-            model.addRow(new Object[]{Name , Gender , phone , product , pri , time});
-
-            jTextField1.setText("");
-            jTextField2.setText("");
-            jTextField3.setText("");
-            jTextField4.setText("");
-            jTextField5.setText("");
-            jTextField6.setText("");
-            
-
-        }
+//        String Name = jTextField1.getText();
+//        String Gender = jTextField2.getText();
+//        String phone = jTextField3.getText();
+//        String product = jTextField4.getText();
+//        String pri = jTextField5.getText();
+//        String time = jTextField6.getText();
+//        
+//        if (Name.isEmpty() || Gender.isEmpty() || phone.isEmpty() || product.isEmpty() || pri.isEmpty() || time.isEmpty() ) {
+//            JOptionPane.showMessageDialog(this,
+//                " Please enter all fields ! ",
+//                " Try again ! ",
+//                JOptionPane.ERROR_MESSAGE);
+//        }   else {
+//            DefaultTableModel model = (DefaultTableModel) table1.getModel();
+//            model.addRow(new Object[]{Name , Gender , phone , product , pri , time});
+//
+//            jTextField1.setText("");
+//            jTextField2.setText("");
+//            jTextField3.setText("");
+//            jTextField4.setText("");
+//            jTextField5.setText("");
+//            jTextField6.setText("");
+//            
+//
+//        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
 
@@ -407,6 +407,6 @@ public class Form_Don_Hang extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private Menu_Admin_3.DonHang.swing.table.Table table1;
+    private com.raven.swing.table.Table table1;
     // End of variables declaration//GEN-END:variables
 }
