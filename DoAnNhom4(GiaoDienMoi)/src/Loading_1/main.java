@@ -20,7 +20,7 @@ public class main {
         frm.setLocationRelativeTo(null);
         try {
             for(int i=0; i<=100; i++){
-                Thread.sleep(20);
+                Thread.sleep(10);
                 ld.ProgressBar.setValue(i);
                 ld.pro.setText(Integer.toString(i)+"%");
                 if (i==100) {
@@ -28,7 +28,7 @@ public class main {
                     frm.setVisible(true);
                 }
             }
-        } catch (Exception e) {
+        } catch (InterruptedException e) {
         }
     }
     

@@ -6,7 +6,11 @@ package Login_Register_2;
 
 import javax.swing.JOptionPane;
 import Menu_Admin_3.Menu_admin;
+import Menu_Staff_4.Menu_Staff;
 import java.awt.HeadlessException;
+import java.awt.event.KeyEvent;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -40,34 +44,54 @@ public class FormLogin extends javax.swing.JFrame {
         jShowPass = new javax.swing.JCheckBox();
         jButtonDangnhap = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        button1 = new Menu_Admin_3.HeThong.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle(" Quản lí cửa hàng PHONE STORE\n");
+        setTitle("Cửa hàng PHONE STORE ");
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/logo login.jpg"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setText("Tên đăng nhập :");
+        jLabel2.setText("User name :");
 
         jTendangnhap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTendangnhapActionPerformed(evt);
             }
         });
+        jTendangnhap.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTendangnhapKeyPressed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setText("Mật khẩu :");
+        jLabel3.setText("Password :");
+
+        jPassword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPasswordKeyPressed(evt);
+            }
+        });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ảnh đăng nhập, đăng kí.jpg"))); // NOI18N
 
         jShowPass.setBackground(new java.awt.Color(255, 255, 255));
         jShowPass.setForeground(new java.awt.Color(102, 102, 102));
         jShowPass.setText("Show password");
+        jShowPass.setFocusable(false);
         jShowPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jShowPassActionPerformed(evt);
@@ -77,7 +101,8 @@ public class FormLogin extends javax.swing.JFrame {
         jButtonDangnhap.setBackground(new java.awt.Color(0, 0, 0));
         jButtonDangnhap.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButtonDangnhap.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonDangnhap.setText("Đăng nhập");
+        jButtonDangnhap.setText("Login");
+        jButtonDangnhap.setFocusable(false);
         jButtonDangnhap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonDangnhapActionPerformed(evt);
@@ -85,10 +110,23 @@ public class FormLogin extends javax.swing.JFrame {
         });
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Tạo tài khoản ?");
+        jLabel5.setText("Create new account ?");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
+            }
+        });
+
+        button1.setBackground(new java.awt.Color(0, 0, 0));
+        button1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        button1.setForeground(new java.awt.Color(242, 242, 242));
+        button1.setText("X");
+        button1.setFocusable(false);
+        button1.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        button1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
             }
         });
 
@@ -113,19 +151,25 @@ public class FormLogin extends javax.swing.JFrame {
                                         .addComponent(jLabel3)
                                         .addGap(0, 0, Short.MAX_VALUE))
                                     .addComponent(jTendangnhap, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
                                 .addGap(136, 136, 136))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, Short.MAX_VALUE)))
+                        .addGap(115, 115, 115)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(7, 7, 7)))
                 .addComponent(jLabel4))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -184,7 +228,7 @@ public class FormLogin extends javax.swing.JFrame {
                 int user = 0;
 //           int user = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
                 if (user == 0) {
-                    Menu_admin m = new Menu_admin();
+                    Menu_Staff m = new Menu_Staff();
                     m.setVisible(true);
                     m.setLocationRelativeTo(null);
                     this.dispose();
@@ -204,6 +248,7 @@ public class FormLogin extends javax.swing.JFrame {
             }
         } catch (HeadlessException e) {
         }
+
     }//GEN-LAST:event_jButtonDangnhapActionPerformed
 
     private void jShowPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jShowPassActionPerformed
@@ -223,6 +268,123 @@ public class FormLogin extends javax.swing.JFrame {
         fdk.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jPasswordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+
+            String email = jTendangnhap.getText();
+            String password = new String(jPassword.getPassword());
+
+            StringBuilder sb = new StringBuilder();
+            if (email.equals("")) {
+                sb.append("Please Enter Email !\n");
+
+            }
+            if (password.equals("")) {
+                sb.append("Please Enter Password ! \n");
+            }
+            if (sb.length() > 0) {
+                JOptionPane.showMessageDialog(this, sb.toString(), "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            try {
+                if (email.equals("nhanvien") && password.equals("1")) {
+                    int user = 0;
+                    //           int user = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+                    if (user == 0) {
+                        Menu_Staff m = new Menu_Staff();
+                        m.setVisible(true);
+                        m.setLocationRelativeTo(null);
+                        this.dispose();
+                    }
+                } else if (email.equals("admin") && password.equals("1")) {
+                    int admin = 0;
+                    //            int admin = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+                    if (admin == 0) {
+                        Menu_admin m = new Menu_admin();
+                        m.setVisible(true);
+                        //                    m.pack();
+                        m.setLocationRelativeTo(null);
+                        this.dispose();
+                    }
+                } else {
+                    JOptionPane.showConfirmDialog(this, "Email or Password not correct !", "Failure !", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (HeadlessException e) {
+            }
+
+        }
+    }//GEN-LAST:event_jPasswordKeyPressed
+
+    private void jTendangnhapKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTendangnhapKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+
+            String email = jTendangnhap.getText();
+            String password = new String(jPassword.getPassword());
+
+            StringBuilder sb = new StringBuilder();
+            if (email.equals("")) {
+                sb.append("Please Enter Email !\n");
+
+            }
+            if (password.equals("")) {
+                sb.append("Please Enter Password ! \n");
+            }
+            if (sb.length() > 0) {
+                JOptionPane.showMessageDialog(this, sb.toString(), "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            try {
+                if (email.equals("nhanvien") && password.equals("1")) {
+                    int user = 0;
+                    //           int user = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+                    if (user == 0) {
+                        Menu_Staff m = new Menu_Staff();
+                        m.setVisible(true);
+                        m.setLocationRelativeTo(null);
+                        this.dispose();
+                    }
+                } else if (email.equals("admin") && password.equals("1")) {
+                    int admin = 0;
+                    //            int admin = JOptionPane.showConfirmDialog(null, "Login Successfully !", "Select Options", JOptionPane.YES_NO_OPTION);
+                    if (admin == 0) {
+                        Menu_admin m = new Menu_admin();
+                        m.setVisible(true);
+                        //                    m.pack();
+                        m.setLocationRelativeTo(null);
+                        this.dispose();
+                    }
+                } else {
+                    JOptionPane.showConfirmDialog(this, "Email or Password not correct !", "Failure !", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (HeadlessException e) {
+            }
+
+        }
+
+    }//GEN-LAST:event_jTendangnhapKeyPressed
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_button1ActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for (double i = 0.0; i <= 1.0; i += 0.1) {
+            String s = i + "";
+            float f = Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(30);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(FormLogin.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -259,6 +421,7 @@ public class FormLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private Menu_Admin_3.HeThong.Button button1;
     private javax.swing.JButton jButtonDangnhap;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

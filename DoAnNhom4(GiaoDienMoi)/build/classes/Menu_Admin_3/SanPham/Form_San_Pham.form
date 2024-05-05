@@ -51,7 +51,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="Menu_Admin_3.SanPham.swing.Background" name="background1">
+        <Container class="Menu_Admin_3.SanPham.Background" name="background1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f4" green="f4" red="f4" type="rgb"/>
@@ -79,7 +79,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="Menu_Admin_3.SanPham.swing.MainPanel" name="mainPanel">
+            <Container class="Menu_Admin_3.SanPham.MainPanel" name="mainPanel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>

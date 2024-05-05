@@ -1,5 +1,8 @@
 package Login_Register_2;
 
+import java.awt.event.KeyEvent;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class FormRegister extends javax.swing.JFrame {
@@ -26,9 +29,16 @@ public class FormRegister extends javax.swing.JFrame {
         jShowPass = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Cửa hàng PHONE STORE ");
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ảnh đăng nhập, đăng kí.jpg"))); // NOI18N
@@ -40,7 +50,8 @@ public class FormRegister extends javax.swing.JFrame {
         jButtonDangKi.setBackground(new java.awt.Color(0, 0, 0));
         jButtonDangKi.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButtonDangKi.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonDangKi.setText("Đăng kí");
+        jButtonDangKi.setText("Sign Up");
+        jButtonDangKi.setFocusable(false);
         jButtonDangKi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonDangKiActionPerformed(evt);
@@ -49,7 +60,8 @@ public class FormRegister extends javax.swing.JFrame {
 
         jButtonQuayLai.setBackground(new java.awt.Color(242, 242, 242));
         jButtonQuayLai.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButtonQuayLai.setText("Quay lại");
+        jButtonQuayLai.setText("Back");
+        jButtonQuayLai.setFocusable(false);
         jButtonQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonQuayLaiActionPerformed(evt);
@@ -57,29 +69,46 @@ public class FormRegister extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setText("Tên đăng nhập :");
+        jLabel3.setText("User name :");
 
         jTendangnhap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTendangnhapActionPerformed(evt);
             }
         });
+        jTendangnhap.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTendangnhapKeyPressed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setText("Mật khẩu :");
+        jLabel4.setText("Password :");
+
+        jPassword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPasswordKeyPressed(evt);
+            }
+        });
 
         jPassword1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPassword1ActionPerformed(evt);
             }
         });
+        jPassword1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPassword1KeyPressed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setText("Nhập lại mật khẩu :");
+        jLabel5.setText("Re-type password :");
 
         jShowPass.setBackground(new java.awt.Color(255, 255, 255));
         jShowPass.setForeground(new java.awt.Color(102, 102, 102));
         jShowPass.setText("Show password");
+        jShowPass.setFocusable(false);
         jShowPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jShowPassActionPerformed(evt);
@@ -100,8 +129,8 @@ public class FormRegister extends javax.swing.JFrame {
                         .addGap(75, 75, 75)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButtonQuayLai, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(50, 50, 50)
+                                .addComponent(jButtonQuayLai, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jButtonDangKi, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jTendangnhap, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -111,7 +140,7 @@ public class FormRegister extends javax.swing.JFrame {
                                 .addComponent(jLabel5)
                                 .addComponent(jPassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jShowPass))))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,22 +185,22 @@ public class FormRegister extends javax.swing.JFrame {
 
     private void jButtonDangKiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDangKiActionPerformed
         StringBuilder sb = new StringBuilder();
-    if(jTendangnhap.getText().equals("")){
-        JOptionPane.showMessageDialog(this, " Tên đăng nhập không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
-    }else{
-    }
-    String password = new String(jPassword.getPassword());
-    if (password.equals("")){
-        JOptionPane.showMessageDialog(this, " Mật khẩu không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+        if (jTendangnhap.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, " Tên đăng nhập không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+        } else {
+        }
+        String password = new String(jPassword.getPassword());
+        if (password.equals("")) {
+            JOptionPane.showMessageDialog(this, " Mật khẩu không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
 //      jLabel4.requestFocus();
-    }else{
-    }
-    String confirm = new String(jPassword1.getPassword());
-    if(!password.equals(confirm)){
-        JOptionPane.showMessageDialog(this, " Mật khẩu đã nhập không khớp ! Thử lại.", " Error", JOptionPane.ERROR_MESSAGE);
-    }else {
-        JOptionPane.showMessageDialog(this, " Đăng ký thành công !", "Thông báo",1);
-    }
+        } else {
+        }
+        String confirm = new String(jPassword1.getPassword());
+        if (!password.equals(confirm)) {
+            JOptionPane.showMessageDialog(this, " Mật khẩu đã nhập không khớp ! Thử lại.", " Error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(this, " Đăng ký thành công !", "Thông báo", 1);
+        }
     }//GEN-LAST:event_jButtonDangKiActionPerformed
 
     private void jButtonQuayLaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuayLaiActionPerformed
@@ -192,20 +221,100 @@ public class FormRegister extends javax.swing.JFrame {
 
     private void jShowPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jShowPassActionPerformed
         // TODO add your handling code here:
-        if(jShowPass.isSelected()){
-            jPassword.setEchoChar((char)0);
-            jPassword1.setEchoChar((char)0);
-        }
-        else {
+        if (jShowPass.isSelected()) {
+            jPassword.setEchoChar((char) 0);
+            jPassword1.setEchoChar((char) 0);
+        } else {
             jPassword.setEchoChar('●');
             jPassword1.setEchoChar('●');
-            
+
         }
     }//GEN-LAST:event_jShowPassActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jPassword1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPassword1KeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            StringBuilder sb = new StringBuilder();
+            if (jTendangnhap.getText().equals("")) {
+                JOptionPane.showMessageDialog(this, " Tên đăng nhập không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+            }
+            String password = new String(jPassword.getPassword());
+            if (password.equals("")) {
+                JOptionPane.showMessageDialog(this, " Mật khẩu không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+//      jLabel4.requestFocus();
+            } else {
+            }
+            String confirm = new String(jPassword1.getPassword());
+            if (!password.equals(confirm)) {
+                JOptionPane.showMessageDialog(this, " Mật khẩu đã nhập không khớp ! Thử lại.", " Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, " Đăng ký thành công !", "Thông báo", 1);
+            }
+    }//GEN-LAST:event_jPassword1KeyPressed
+}
+    private void jPasswordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            StringBuilder sb = new StringBuilder();
+            if (jTendangnhap.getText().equals("")) {
+                JOptionPane.showMessageDialog(this, " Tên đăng nhập không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+            }
+            String password = new String(jPassword.getPassword());
+            if (password.equals("")) {
+                JOptionPane.showMessageDialog(this, " Mật khẩu không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+//      jLabel4.requestFocus();
+            } else {
+            }
+            String confirm = new String(jPassword1.getPassword());
+            if (!password.equals(confirm)) {
+                JOptionPane.showMessageDialog(this, " Mật khẩu đã nhập không khớp ! Thử lại.", " Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, " Đăng ký thành công !", "Thông báo", 1);
+            }
+    }               
+    }//GEN-LAST:event_jPasswordKeyPressed
+
+    private void jTendangnhapKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTendangnhapKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            StringBuilder sb = new StringBuilder();
+            if (jTendangnhap.getText().equals("")) {
+                JOptionPane.showMessageDialog(this, " Tên đăng nhập không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+            }
+            String password = new String(jPassword.getPassword());
+            if (password.equals("")) {
+                JOptionPane.showMessageDialog(this, " Mật khẩu không được để trống !", " Error", JOptionPane.ERROR_MESSAGE);
+//      jLabel4.requestFocus();
+            } else {
+            }
+            String confirm = new String(jPassword1.getPassword());
+            if (!password.equals(confirm)) {
+                JOptionPane.showMessageDialog(this, " Mật khẩu đã nhập không khớp ! Thử lại.", " Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, " Đăng ký thành công !", "Thông báo", 1);
+            }
+    }               
+    }//GEN-LAST:event_jTendangnhapKeyPressed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(double i =0.0 ; i<=1.0 ; i+=0.1){
+            String s = i+"";
+            float f = Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(30);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(FormLogin.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        
+    }//GEN-LAST:event_formWindowOpened
+
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -232,10 +341,8 @@ public class FormRegister extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FormRegister().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new FormRegister().setVisible(true);
         });
     }
 

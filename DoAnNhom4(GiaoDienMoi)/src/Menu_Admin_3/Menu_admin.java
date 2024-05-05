@@ -1,17 +1,17 @@
 package Menu_Admin_3;
 
 import Login_Register_2.FormLogin;
-import Menu_Admin_3.DoanhThu.component.Menu;
 import Menu_Admin_3.SanPham.Form_San_Pham;
 import Menu_Admin_3.DoanhThu.Form_Doanh_Thu;
 import Menu_Admin_3.NhanVien.Form_Nhan_Vien;
-import Menu_Admin_3.DoanhThu.model.ModelMenu;
 import Menu_Admin_3.DonHang.Form_Don_Hang;
 import Menu_Admin_3.HeThong.Form_He_Thong;
 import Menu_Admin_3.KhachHang.Form_Khach_Hang;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -44,7 +44,7 @@ public class Menu_admin extends javax.swing.JFrame {
             frm.setVisible(true);
             frm.pack();
             frm.setLocationRelativeTo(null);
-            Menu_admin.this.dispose();
+            this.dispose();
         });
 
         menu.addEventMenu((ActionEvent ae) -> {
@@ -103,7 +103,7 @@ public class Menu_admin extends javax.swing.JFrame {
         animator.setResolution(0);
         animator.setAcceleration(0.5f);
         animator.setDeceleration(0.5f);
-        showForm(new Form_Doanh_Thu());
+        showForm(new Form_San_Pham());
     }
 
     private void showForm(Component com) {
@@ -120,7 +120,13 @@ public class Menu_admin extends javax.swing.JFrame {
         body = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Cửa hàng PHONE STORE ");
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         body.setBackground(new java.awt.Color(245, 245, 245));
         body.setName(""); // NOI18N
@@ -150,6 +156,21 @@ public class Menu_admin extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for (double i = 0.0; i <= 1.0; i += 0.1) {
+            String s = i + "";
+            float f = Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(30);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(FormLogin.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+    }//GEN-LAST:event_formWindowOpened
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
