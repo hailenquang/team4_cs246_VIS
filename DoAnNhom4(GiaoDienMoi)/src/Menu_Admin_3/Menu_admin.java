@@ -1,12 +1,13 @@
 package Menu_Admin_3;
 
 import Login_Register_2.FormLogin;
-import Menu_Admin_3.SanPham.Form_San_Pham;
+import Menu_Staff_4.SanPham.Form_San_Pham;
 import Menu_Admin_3.DoanhThu.Form_Doanh_Thu;
 import Menu_Admin_3.NhanVien.Form_Nhan_Vien;
 import Menu_Admin_3.DonHang.Form_Don_Hang;
 import Menu_Admin_3.HeThong.Form_He_Thong;
 import Menu_Admin_3.KhachHang.Form_Khach_Hang;
+import Menu_Admin_3.SanPham.Form_QLSanPham;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
@@ -57,7 +58,7 @@ public class Menu_admin extends javax.swing.JFrame {
                 case 0 ->
                     showForm(new Form_Nhan_Vien());
                 case 1 ->
-                    showForm(new Form_San_Pham());
+                    showForm(new Form_QLSanPham());
                 case 2 ->
                     showForm(new Form_Don_Hang());
                 case 3 ->

@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:DoAnNhom4(DAOTIENDUNG)/src/com/raven/swing/table/Profile.java
-package com.raven.swing.table;
-========
 package Menu_Admin_3.DoanhThu;
->>>>>>>> 01e18b0ef579a4e965fe1472ce27a0943d1111d0:DoAnNhom4(GiaoDienMoi)/src/Menu_Admin_3/DoanhThu/LegendItem.java
 
 public class LegendItem extends javax.swing.JPanel {
 

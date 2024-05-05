@@ -1,10 +1,6 @@
-<<<<<<<< HEAD:DoAnNhom4(DAOTIENDUNG)/src/com/raven/swing/scrollbar/ModernScrollBarUI.java
-package com.raven.swing.scrollbar;
-========
 package ScrollBar;
 
 
->>>>>>>> 01e18b0ef579a4e965fe1472ce27a0943d1111d0:DoAnNhom4(GiaoDienMoi)/src/ScrollBar/ModernScrollBarUI.java
 
 import java.awt.Dimension;
 import java.awt.Graphics;

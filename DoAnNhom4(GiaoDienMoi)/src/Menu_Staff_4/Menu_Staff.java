@@ -4,7 +4,7 @@ import Menu_Staff_4.*;
 import Login_Register_2.FormLogin;
 import Menu_Admin_3.HeThong.Form_He_Thong;
 import Menu_Admin_3.ModelMenu;
-import Menu_Admin_3.SanPham.Form_San_Pham;
+import Menu_Staff_4.SanPham.Form_San_Pham;
 import Menu_Staff_4.DanhSachHoaDon.Form_Danh_Sach_Hoa_Don;
 import Menu_Staff_4.TaoHoaDon.Form_Tao_Hoa_Don;
 import java.awt.BorderLayout;
