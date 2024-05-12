@@ -347,7 +347,6 @@ public class Form_Don_Hang extends javax.swing.JPanel {
                     " Try again ! ",
                     JOptionPane.ERROR_MESSAGE);
         } else {
-            // Save data to data.txt
             try (FileWriter writer = new FileWriter("khachhang.txt", true)) {
                 writer.write(String.format("%s,%s,%s,%s,%s,%s,%s,%s\n", name, gender, email, phone, address, product, price, time));
             } catch (IOException e) {
@@ -360,7 +359,6 @@ public class Form_Don_Hang extends javax.swing.JPanel {
             DefaultTableModel model = (DefaultTableModel) table.getModel();
             model.addRow(new Object[]{name, product, price, time});
 
-            // Clear text fields
             jTextField1.setText("");
             jTextField2.setText("");
             jTextField8.setText("");
