@@ -1,0 +1,2 @@
+Hoang Thanh An,Nam,user1@gmail.com,0888100204,Da Nang,14 Pro Max,$1935,12:20 02/04/2024
+Tran Minh Manh,Nam,user2@gmail.com,0987654321,Dong Ha,Samsung Galaxy S24+,$1000,11:30 12/06/2023

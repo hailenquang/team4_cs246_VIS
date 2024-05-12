@@ -20,23 +20,7 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
     public Form_Nhan_Vien() {
         initComponents();
         setOpaque(false);
-//        init();
     }
-
-//    private void init() {
-//        DefaultTableModel model = (DefaultTableModel) table.getModel();
-//        model.addRow(new Object[]{1, "Hoàng Thanh A", "Male", "10/02/2004", "0888101234", "Đà Nẵng", "nhanvien", "1"});
-//        model.addRow(new Object[]{2, "Nguyễn Thị F", "Female", "10/02/2006", "0978431234", "Hà Nội", "nhanvien2", "2"});
-//        model.addRow(new Object[]{3, "Hoàng Thanh B", "Male", "10/02/2008", "0888105678", "Đà Nẵng", "nhanvien3", "3"});
-//        model.addRow(new Object[]{4, "Nguyễn Thị E", "Female", "10/02/2003", "0978439056", "Hà Nội", "nhanvien4", "4"});
-//        model.addRow(new Object[]{5, "Hoàng Thanh C", "Male", "10/02/2008", "0978431234", "Đà Nẵng", "nhanvien5", "5"});
-//        model.addRow(new Object[]{6, "Nguyễn Thị D", "Female", "10/02/2002", "0978439056", "Đà Nẵng", "nhanvien6", "6"});
-//        model.addRow(new Object[]{7, "Hoàng Thanh D", "Male", "10/02/2000", "0978439056", "Hà Nội", "nhanvien7", "7"});
-//        model.addRow(new Object[]{8, "Nguyễn Thị C", "Female", "10/02/2001", "0978431234", "Đà Nẵng", "nhanvien8", "8"});
-//        model.addRow(new Object[]{9, "Hoàng Thanh E", "Male", "10/02/2007", "0978439056", "Hà Nội", "nhanvien9", "9"});
-//        model.addRow(new Object[]{10, "Nguyễn Thị B", "Female", "10/02/2006", "0978431234", "Đà Nẵng", "nhanvien10", "10"});
-//        model.addRow(new Object[]{11, "Hoàng Thanh F", "Male", "10/02/2009", "0978439056", "Hà Nội", "nhanvien11", "11"});
-//        model.addRow(new Object[]{12, "Nguyễn Thị A", "Female", "10/02/2002", "0978439056", "Đà Nẵng", "nhanvien12", "12"});
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
