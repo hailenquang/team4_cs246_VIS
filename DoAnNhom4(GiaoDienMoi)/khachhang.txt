@@ -13,3 +13,4 @@ Hoang Thi Phuong,Female,hoangthiphuong@gmail.com,0395754876,Hue,15 Plus,$1299,15
 Hoang Van Nam,Male,hoangvannam@gmail.com,0398535335,Hue,15 Pro Max,$1499,11:30 12/06/2023
 Tran Minh Quang,Male,tranminhquang@gmail.com,0438573754,Da Nang ,13 Pro Max,$1399,19h25 23/4/2024
 Nguen Van Tan,Male,nguyenvantan@gmail.com,0475873587,Hue,Samsung S24 Ultra,$1419,18h00 14/5/2024
+Ho Quang Hieu,Male,hoquanghieu@gmail.com,0987456213,Phu Tho,15 Pro Max,$1499,08:20 14/12/2023

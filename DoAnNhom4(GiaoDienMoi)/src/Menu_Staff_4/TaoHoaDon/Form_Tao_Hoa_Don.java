@@ -5,6 +5,9 @@
 package Menu_Staff_4.TaoHoaDon;
 
 import java.awt.print.PrinterException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
@@ -3222,10 +3225,11 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
             double price = qty * 1399;
             total += price;
             getTax((int) total);
-            jTextArea1.setText(jTextArea1.getText() + "     " + x + ". " + jLabel50.getText() + "\t\t\t\t" + price + "\n");
+            jTextArea1.setText(jTextArea1.getText() + "  " + x + ". " + jLabel50.getText() + "\t\t\t     " + qty + "\t" + price + "\n");
             dudate();
         } else {
             jCheckBox7.setSelected(false);
+            jSpinner7.setValue( 0);
 
         }
     }//GEN-LAST:event_jCheckBox7ActionPerformed
@@ -3241,10 +3245,11 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
             double price = qty * 1299;
             total += price;
             getTax((int) total);
-            jTextArea1.setText(jTextArea1.getText() + "     " + x + ". " + jLabel64.getText() + "\t\t\t\t" + price + "\n");
+            jTextArea1.setText(jTextArea1.getText() + "  " + x + ". " + jLabel64.getText() + "\t\t\t     " + qty + "\t" + price + "\n");
             dudate();
         } else {
             jCheckBox9.setSelected(false);
+            jSpinner9.setValue( 0);
 
         }
     }//GEN-LAST:event_jCheckBox9ActionPerformed
@@ -3652,23 +3657,29 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
             jCheckBox32.setSelected(false);
         }
     }//GEN-LAST:event_jCheckBox32ActionPerformed
-
+    private void saveToTextFile() throws IOException {
+        String textToSave = jTextArea1.getText();
+        BufferedWriter writer = new BufferedWriter(new FileWriter("data.txt"));
+        writer.write(textToSave);
+        writer.close();
+    }
     private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
         if (total != 0) {
             if (!btnTotal.isEnabled()) {
                 try {
                     jTextArea1.print();
+                    saveToTextFile();  // Call the method to save data to "data.txt"
+                    JOptionPane.showMessageDialog(null, "Receipt saved to data.txt!");
                 } catch (PrinterException ex) {
                     Logger.getLogger(Form_Tao_Hoa_Don.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(null, "Error saving receipt: " + ex.getMessage());
                 }
+            } else if (total == 0.0) {
+                JOptionPane.showMessageDialog(null, "You haven't purchased any product");
             } else {
-                JOptionPane.showMessageDialog(null, "First, you should calculate the total price");
-
+                JOptionPane.showMessageDialog(null, "Please calculate the total price first.");
             }
-
-        } else {
-            JOptionPane.showMessageDialog(null, "You haven't purchased any product");
-
         }
     }//GEN-LAST:event_button2ActionPerformed
     public void getTax(int t) {

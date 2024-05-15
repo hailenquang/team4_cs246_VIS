@@ -502,6 +502,11 @@ public class Form_QLSanPham extends javax.swing.JPanel {
         jButton1.setBackground(new java.awt.Color(242, 242, 242));
         jButton1.setText("Add");
         jButton1.setFocusable(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelShadow33Layout = new javax.swing.GroupLayout(panelShadow33);
         panelShadow33.setLayout(panelShadow33Layout);
@@ -1987,6 +1992,11 @@ public class Form_QLSanPham extends javax.swing.JPanel {
         jButton2.setBackground(new java.awt.Color(242, 242, 242));
         jButton2.setText("Add");
         jButton2.setFocusable(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelShadow54Layout = new javax.swing.GroupLayout(panelShadow54);
         panelShadow54.setLayout(panelShadow54Layout);
@@ -2934,6 +2944,11 @@ public class Form_QLSanPham extends javax.swing.JPanel {
         jButton3.setBackground(new java.awt.Color(242, 242, 242));
         jButton3.setText("Add");
         jButton3.setFocusable(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelShadow74Layout = new javax.swing.GroupLayout(panelShadow74);
         panelShadow74.setLayout(panelShadow74Layout);
@@ -4011,6 +4026,30 @@ public class Form_QLSanPham extends javax.swing.JPanel {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Form_AddSP f = new Form_AddSP();
+        f.setVisible(true);
+        f.pack();
+        f.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Form_AddSP f = new Form_AddSP();
+        f.setVisible(true);
+        f.pack();
+        f.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        Form_AddSP f = new Form_AddSP();
+        f.setVisible(true);
+        f.pack();
+        f.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
