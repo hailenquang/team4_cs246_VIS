@@ -2,6 +2,7 @@ package Menu_Admin_3.SanPham;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import org.jxmapviewer.util.GraphicsUtilities;
 
 public class ShadowRenderer {
 

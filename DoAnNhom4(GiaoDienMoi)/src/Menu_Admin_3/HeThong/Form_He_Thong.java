@@ -34,7 +34,7 @@ public class Form_He_Thong extends javax.swing.JPanel {
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         button1 = new Menu_Admin_3.HeThong.Button();
-        button2 = new Menu_Admin_3.HeThong.Button();
+        btbAn = new Menu_Admin_3.HeThong.Button();
         button3 = new Menu_Admin_3.HeThong.Button();
         button4 = new Menu_Admin_3.HeThong.Button();
         button5 = new Menu_Admin_3.HeThong.Button();
@@ -97,16 +97,16 @@ public class Form_He_Thong extends javax.swing.JPanel {
             }
         });
 
-        button2.setBackground(new java.awt.Color(0, 102, 153));
-        button2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        button2.setForeground(new java.awt.Color(255, 255, 255));
-        button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/caculator.png"))); // NOI18N
-        button2.setText("                              Caculator");
-        button2.setFocusable(false);
-        button2.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        button2.addActionListener(new java.awt.event.ActionListener() {
+        btbAn.setBackground(new java.awt.Color(0, 102, 153));
+        btbAn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btbAn.setForeground(new java.awt.Color(255, 255, 255));
+        btbAn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/caculator.png"))); // NOI18N
+        btbAn.setText("                              Caculator");
+        btbAn.setFocusable(false);
+        btbAn.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        btbAn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button2ActionPerformed(evt);
+                btbAnActionPerformed(evt);
             }
         });
 
@@ -167,7 +167,7 @@ public class Form_He_Thong extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(button3, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btbAn, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,7 +203,7 @@ public class Form_He_Thong extends javax.swing.JPanel {
                 .addGap(50, 50, 50)
                 .addComponent(button3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
-                .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btbAn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
                 .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(337, Short.MAX_VALUE))
@@ -230,13 +230,13 @@ public class Form_He_Thong extends javax.swing.JPanel {
 
     }//GEN-LAST:event_button1ActionPerformed
 
-    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
+    private void btbAnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbAnActionPerformed
         // TODO add your handling code here:
         Caculator cc = new Caculator();
         cc.setVisible(true);
         cc.pack();
         cc.setLocationRelativeTo(null);
-    }//GEN-LAST:event_button2ActionPerformed
+    }//GEN-LAST:event_btbAnActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
         // TODO add your handling code here:
@@ -252,8 +252,8 @@ public class Form_He_Thong extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private Menu_Admin_3.HeThong.Button btbAn;
     private Menu_Admin_3.HeThong.Button button1;
-    private Menu_Admin_3.HeThong.Button button2;
     private Menu_Admin_3.HeThong.Button button3;
     private Menu_Admin_3.HeThong.Button button4;
     private Menu_Admin_3.HeThong.Button button5;

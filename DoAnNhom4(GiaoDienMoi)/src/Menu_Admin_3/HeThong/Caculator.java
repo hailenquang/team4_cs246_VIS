@@ -64,7 +64,6 @@ public class Caculator extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Caculator");
         setUndecorated(true);
-        setType(java.awt.Window.Type.UTILITY);
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 formMouseDragged(evt);

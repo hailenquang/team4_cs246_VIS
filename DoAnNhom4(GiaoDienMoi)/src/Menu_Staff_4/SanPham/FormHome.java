@@ -90,7 +90,7 @@ public class FormHome extends javax.swing.JPanel {
 
         lbPrice.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         lbPrice.setForeground(new java.awt.Color(76, 76, 76));
-        lbPrice.setText("Rrice");
+        lbPrice.setText("Price");
 
         lbBrand.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         lbBrand.setForeground(new java.awt.Color(76, 76, 76));

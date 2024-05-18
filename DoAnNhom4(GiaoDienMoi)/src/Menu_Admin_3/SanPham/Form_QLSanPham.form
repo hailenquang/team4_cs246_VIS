@@ -570,6 +570,9 @@
                                   <Image iconType="3" name="/image/15.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox21MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -678,6 +681,9 @@
                                   <Image iconType="3" name="/image/15 pro max.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox22MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -786,6 +792,9 @@
                                   <Image iconType="3" name="/image/15 pro.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox24MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -894,6 +903,9 @@
                                   <Image iconType="3" name="/image/15 plus.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox25MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1002,6 +1014,9 @@
                                   <Image iconType="3" name="/image/14 pro max.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox19MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1110,6 +1125,9 @@
                                   <Image iconType="3" name="/image/14 pro.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox23MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1218,6 +1236,9 @@
                                   <Image iconType="3" name="/image/14 plus.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox26MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1326,6 +1347,9 @@
                                   <Image iconType="3" name="/image/14.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox27MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1434,6 +1458,9 @@
                                   <Image iconType="3" name="/image/13 pro max.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox28MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1542,6 +1569,9 @@
                                   <Image iconType="3" name="/image/13 pro.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox20MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1650,6 +1680,9 @@
                                   <Image iconType="3" name="/image/13.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox29MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1758,6 +1791,9 @@
                                   <Image iconType="3" name="/image/12 pro max.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox30MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1866,6 +1902,9 @@
                                   <Image iconType="3" name="/image/12 pro.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox31MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -1974,6 +2013,9 @@
                                   <Image iconType="3" name="/image/12.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox32MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -3274,6 +3316,9 @@
                                   <Image iconType="3" name="/image/galaxy z flip5.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox33MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -3382,6 +3427,9 @@
                                   <Image iconType="3" name="/image/galaxy s24 ultra.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox34MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -3490,6 +3538,9 @@
                                   <Image iconType="3" name="/image/galaxy s24+.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox35MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -3598,6 +3649,9 @@
                                   <Image iconType="3" name="/image/galaxy z flip4.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox36MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -3666,7 +3720,6 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="pictureBox37" alignment="0" max="32767" attributes="0"/>
                                           <Component id="jTextArea38" alignment="0" pref="0" max="32767" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
@@ -3679,6 +3732,7 @@
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="pictureBox37" alignment="0" max="32767" attributes="0"/>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
@@ -3706,6 +3760,9 @@
                                   <Image iconType="3" name="/image/galaxy z fold5.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox37MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -4881,6 +4938,9 @@
                             </Property>
                             <Property name="shadowOpacity" type="float" value="0.3"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelShadow74MouseClicked"/>
+                          </Events>
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -4977,6 +5037,9 @@
                             </Property>
                             <Property name="shadowOpacity" type="float" value="0.3"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelShadow75MouseClicked"/>
+                          </Events>
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -5024,6 +5087,9 @@
                                   <Image iconType="3" name="/image/oppo find n2 flip.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox47MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5132,6 +5198,9 @@
                                   <Image iconType="3" name="/image/oppo a18.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox48MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5240,6 +5309,9 @@
                                   <Image iconType="3" name="/image/oppo a38.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox49MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5348,6 +5420,9 @@
                                   <Image iconType="3" name="/image/oppo a57.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox50MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5456,6 +5531,9 @@
                                   <Image iconType="3" name="/image/oppo find n3.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox51MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5564,6 +5642,9 @@
                                   <Image iconType="3" name="/image/oppo n3 flip.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox52MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5672,6 +5753,9 @@
                                   <Image iconType="3" name="/image/oppo reno11 f.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox53MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5780,6 +5864,9 @@
                                   <Image iconType="3" name="/image/oppo reno11 pro.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox54MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
@@ -5888,6 +5975,9 @@
                                   <Image iconType="3" name="/image/oppo reno11.png"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pictureBox55MouseClicked"/>
+                              </Events>
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                                 <Property name="useNullLayout" type="boolean" value="true"/>
