@@ -5,7 +5,8 @@
 User name: admin
 </h1> Password: 1
 </h1>-> Connect to Admin form
-<br/>
+
+
 User name: nhanvien
 </h1> Password: 1
 </h1>-> Connect to Staff form
