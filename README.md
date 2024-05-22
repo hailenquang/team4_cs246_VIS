@@ -1,4 +1,4 @@
-PHONE sTORE ACCOUNT
+PHONE STORE ACCOUNT
 
 User name: admin
 Password: 1
