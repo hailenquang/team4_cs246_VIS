@@ -32,5 +32,9 @@ Password: 1
 <img src="https://img.shields.io/badge/Minh Man-0077B5?style=for-the-badge&logo=facebook&logoColor=white" target="_blank" />
 </a>
 </div>
-Link Document Drive: https://drive.google.com/drive/folders/1zPxqNMyoYNzj3B91ibB6mkDRGZaaG62J?usp=drive_link
+<div align="center">
+<a href="https://drive.google.com/drive/folders/1zPxqNMyoYNzj3B91ibB6mkDRGZaaG62J?usp=drive_link">
+    <img src="https://img.shields.io/badge/Document Drive-333333?style=for-the-badge&logo=github&logoColor=red" />
+</a>
+</div>
 
