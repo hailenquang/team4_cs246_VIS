@@ -4,10 +4,10 @@
 
 User name: admin
 </h1> Password: 1
-</h1> -> Connect to Admin form
-
+</h1>-> Connect to Admin form
+<br/>
 User name: nhanvien
 </h1> Password: 1
-</h1> -> Connect to Staff form
+</h1>-> Connect to Staff form
 
 Link Document Drive: https://drive.google.com/drive/folders/1zPxqNMyoYNzj3B91ibB6mkDRGZaaG62J?usp=drive_link
