@@ -3,12 +3,10 @@
 </h1>
 
 User name: admin
-<div align="center">
-Password: 1
+</h1> Password: 1
 -> Connect to Admin form
 
 User name: nhanvien
-<div align="center">
 Password: 1
 -> Connect to Staff form
 
