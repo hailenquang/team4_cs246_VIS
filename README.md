@@ -34,7 +34,7 @@ Password: 1
 </div>
 <div align="center">
 <a href="https://drive.google.com/drive/folders/1zPxqNMyoYNzj3B91ibB6mkDRGZaaG62J?usp=drive_link">
-    <img src="https://img.shields.io/badge/Document Drive-333333?style=for-the-badge&logo=gmail&logoColor=blue" />
+    <img src="https://img.shields.io/badge/Document Drive-333333?style=for-the-badge&logo=gmail&logoColor=green" />
 </a>
 </div>
 
