@@ -5,9 +5,8 @@ User name: admin
 <br/>
 Password: 1
 <br/>
-<br/>
-
 -> Connect to Admin form
+<br/>
 <br/>
 User name: nhanvien
 <br/>
