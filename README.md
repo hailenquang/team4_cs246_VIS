@@ -37,6 +37,6 @@ Password: 1
     <img src="https://img.shields.io/badge/Document Drive-333333?style=for-the-badge&logo=gmail&logoColor=red" />
 </a>
 </div>
-<h3 align="center">
+<h3 align="center"style="color: black;">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=25&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Thanks+for+visiting!+✌️;+Shoot+me+a+message+on+Facebook!;I'm+always+down+to+collab+:)">
 </h3>
