@@ -16,20 +16,20 @@ Password: 1
 <br/>
 <h2 align="center">📬 Contact us 📬</h2>
 <div align="center">
-    <a href="https://www.facebook.com/an.hoang100204/">
+    <a href="https://www.facebook.com/an.hoang100204/" target="_blank">
 <img src="https://img.shields.io/badge/Thanh An-0077B5?style=for-the-badge&logo=facebook&logoColor=white" target="_blank" />
 </a>
-    <a href="https://www.facebook.com/profile.php?id=100069027096276">
+    <a href="https://www.facebook.com/profile.php?id=100069027096276" target="_blank">
 <img src="https://img.shields.io/badge/Quoc Quang-0077B5?style=for-the-badge&logo=facebook&logoColor=white" target="_blank" />
 </a>
-    <a href="https://www.facebook.com/profile.php?id=100083618592057">
+    <a href="https://www.facebook.com/profile.php?id=100083618592057" target="_blank">
 <img src="https://img.shields.io/badge/Van Duong-0077B5?style=for-the-badge&logo=facebook&logoColor=white" target="_blank" />
 </a>
-    <a href="https://www.facebook.com/profile.php?id=100025869333785">
+    <a href="https://www.facebook.com/profile.php?id=100025869333785" target="_blank">
 <img src="https://img.shields.io/badge/Tien Dung-0077B5?style=for-the-badge&logo=facebook&logoColor=white" target="_blank" />
 </a>
     <a href="https://www.facebook.com/nguyen.kudo.1690">
-<img src="https://img.shields.io/badge/Minh Man-0077B5?style=for-the-badge&logo=facebook&logoColor=white" target="_blank" />
+<img src="https://img.shields.io/badge/Minh Man-0077B5?style=for-the-badge&logo=facebook&logoColor=white" />
 </a>
 </div>
 <div align="center">
