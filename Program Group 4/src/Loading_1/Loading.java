@@ -62,6 +62,7 @@ public class Loading extends javax.swing.JFrame {
         jLabel1.setText("WELCOME");
 
         ProgressBar.setForeground(new java.awt.Color(0, 204, 255));
+        ProgressBar.setFocusable(false);
 
         pro.setForeground(new java.awt.Color(255, 255, 255));
         pro.setText("0%");

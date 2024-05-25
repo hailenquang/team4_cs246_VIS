@@ -76,6 +76,7 @@ public class Form_Don_Hang extends javax.swing.JPanel {
         button3 = new Menu_Admin_3.HeThong.Button();
         button2 = new Menu_Admin_3.HeThong.Button();
         button1 = new Menu_Admin_3.HeThong.Button();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
@@ -277,6 +278,14 @@ public class Form_Don_Hang extends javax.swing.JPanel {
                 .addGap(39, 39, 39))
         );
 
+        jComboBox1.setBackground(new java.awt.Color(242, 242, 242));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sort by total amount" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -286,8 +295,14 @@ public class Form_Don_Hang extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(card16, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -305,8 +320,11 @@ public class Form_Don_Hang extends javax.swing.JPanel {
                     .addComponent(card16, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -332,42 +350,94 @@ public class Form_Don_Hang extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
-        String name = jTextField1.getText();
-        String gender = jTextField2.getText();
-        String email = jTextField8.getText();
-        String phone = jTextField3.getText();
-        String address = jTextField4.getText();
-        String product = jTextField7.getText();
-        String price = jTextField5.getText();
-        String time = jTextField6.getText();
+    String name = jTextField1.getText();
+    String gender = jTextField2.getText();
+    String email = jTextField8.getText();
+    String phone = jTextField3.getText();
+    String address = jTextField4.getText();
+    String product = jTextField7.getText();
+    String price = jTextField5.getText();
+    String time = jTextField6.getText();
 
-        if (name.isEmpty() || gender.isEmpty() || email.isEmpty() || phone.isEmpty() || address.isEmpty() || product.isEmpty() || price.isEmpty() || time.isEmpty()) {
-            JOptionPane.showMessageDialog(this,
-                    " Please enter all fields ! ",
-                    " Try again ! ",
-                    JOptionPane.ERROR_MESSAGE);
-        } else {
-            try (FileWriter writer = new FileWriter("khachhang.txt", true)) {
-                writer.write(String.format("%s,%s,%s,%s,%s,%s,%s,%s\n", name, gender, email, phone, address, product, price, time));
-            } catch (IOException e) {
-                e.printStackTrace();
-                JOptionPane.showMessageDialog(this,
-                        "Error saving data to file!",
-                        "Error",
-                        JOptionPane.ERROR_MESSAGE);
+    if (name.isEmpty() || gender.isEmpty() || email.isEmpty() || phone.isEmpty() || address.isEmpty() || product.isEmpty() || price.isEmpty() || time.isEmpty()) {
+        JOptionPane.showMessageDialog(this,
+                " Please enter all fields ! ",
+                " Try again ! ",
+                JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    boolean emailExists = false;
+    boolean phoneExists = false;
+
+    // Check for duplicate phone number and email
+    try (BufferedReader reader = new BufferedReader(new FileReader("khachhang.txt"))) {
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] parts = line.split(",");
+            if (parts.length >= 8) {
+                String existingEmail = parts[2];
+                String existingPhone = parts[3];
+
+                if (existingEmail.equals(email) && existingPhone.equals(phone)) {
+                    emailExists = true;
+                    phoneExists = true;
+                    break;
+                } else if (existingEmail.equals(email)) {
+                    emailExists = true;
+                } else if (existingPhone.equals(phone)) {
+                    phoneExists = true;
+                }
             }
-            DefaultTableModel model = (DefaultTableModel) table.getModel();
-            model.addRow(new Object[]{name, product, price, time});
-
-            jTextField1.setText("");
-            jTextField2.setText("");
-            jTextField8.setText("");
-            jTextField3.setText("");
-            jTextField4.setText("");
-            jTextField7.setText("");
-            jTextField5.setText("");
-            jTextField6.setText("");
         }
+    } catch (IOException e) {
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(this,
+                "Error reading data from file!",
+                "Error",
+                JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    if (emailExists && phoneExists) {
+        JOptionPane.showMessageDialog(this,
+                "Both email and phone number already exist!",
+                "Error",
+                JOptionPane.ERROR_MESSAGE);
+    } else if (emailExists) {
+        JOptionPane.showMessageDialog(this,
+                "Email already exists!",
+                "Error",
+                JOptionPane.ERROR_MESSAGE);
+    } else if (phoneExists) {
+        JOptionPane.showMessageDialog(this,
+                "Phone number already exists!",
+                "Error",
+                JOptionPane.ERROR_MESSAGE);
+    } else {
+        try (FileWriter writer = new FileWriter("khachhang.txt", true)) {
+            writer.write(String.format("%s,%s,%s,%s,%s,%s,%s,%s\n", name, gender, email, phone, address, product, price, time));
+        } catch (IOException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this,
+                    "Error saving data to file!",
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+        model.addRow(new Object[]{name, product, price, time});
+
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField8.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField7.setText("");
+        jTextField5.setText("");
+        jTextField6.setText("");
+    }
+
     }//GEN-LAST:event_button3ActionPerformed
 
     private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
@@ -440,6 +510,10 @@ public class Form_Don_Hang extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_formAncestorAdded
 
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private Menu_Admin_3.HeThong.Button button1;
@@ -448,6 +522,7 @@ public class Form_Don_Hang extends javax.swing.JPanel {
     private Menu_Admin_3.DonHang.Card card1;
     private Menu_Admin_3.DonHang.Card card16;
     private Menu_Admin_3.DonHang.Card card7;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

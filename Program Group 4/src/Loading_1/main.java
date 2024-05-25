@@ -17,10 +17,10 @@ public class main {
         Loading ld = new Loading();
         ld.setVisible(true);
         FormLogin frm = new FormLogin();
-        frm.setLocationRelativeTo(null);
+        frm.setLocationRelativeTo(null); 
         try {
             for(int i=0; i<=100; i++){
-                Thread.sleep(10);
+                Thread.sleep(30);
                 ld.ProgressBar.setValue(i);
                 ld.pro.setText(Integer.toString(i)+"%");
                 if (i==100) {

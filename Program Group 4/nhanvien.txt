@@ -18,8 +18,3 @@
 18,Nguyen Van Tai,Male,23/12/2003,0397576474,Quang Tri,nhanvien18,1
 19,Nguyen Ngoc Nhat Tien,Male,18/12/2003,0398871812,Hue,nhanvien19,1
 20,Tran Van Thai,Male,12/12/2001,0367765444,Da Nang,nhanvien20,1
-21,1,1,1,1,1,1,1
-22,1,1,1,0353873848,1,1,1
-23,A,A,A,A,A,A,A
-24,B,B,B,B,B,B,B
-25,C,C,C,C,C,C,C

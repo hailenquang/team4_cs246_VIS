@@ -27,6 +27,7 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
     public Form_Nhan_Vien() {
         initComponents();
         setOpaque(false);
+
     }
 
     @SuppressWarnings("unchecked")
@@ -167,14 +168,14 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
                 .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
                         .addComponent(jTextField4)))
                 .addGap(84, 84, 84)
                 .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -187,9 +188,9 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelRound1Layout.createSequentialGroup()
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelRound1Layout.setVerticalGroup(
@@ -213,12 +214,12 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
                         .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)
-                            .addComponent(jLabel10)
-                            .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel9)
+                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(36, 36, 36)
                         .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9)))
+                            .addComponent(jLabel10)
+                            .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(panelRound1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -289,6 +290,7 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jComboBox1.setBackground(new java.awt.Color(242, 242, 242));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sort by Id", "Sort by Name", "Sort by Phone Number" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -419,14 +421,21 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
         String phonenumber = jTextField6.getText();
         String address = jTextField7.getText();
         String username = jTextField8.getText();
-        String password = jPasswordField1.getText();
-
+        String password = new String(jPasswordField1.getPassword());
         if (fullname.isEmpty() || gender.isEmpty() || dateofbirth.isEmpty() || phonenumber.isEmpty() || address.isEmpty() || username.isEmpty() || password.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Please enter all fields!", "Try again!", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        if (isDuplicatePhoneNumber(phonenumber)) {
+        boolean duplicatePhone = isDuplicatePhoneNumber(phonenumber);
+        boolean duplicateUsername = isDuplicateUsername(username);
+        if (duplicatePhone && duplicateUsername) {
+            JOptionPane.showMessageDialog(this, "Phone number and username already exist!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        } else if (duplicatePhone) {
             JOptionPane.showMessageDialog(this, "Phone number already exists!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        } else if (duplicateUsername) {
+            JOptionPane.showMessageDialog(this, "Username already exists!", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
         List<String[]> data = readDataFromFile();
@@ -439,7 +448,8 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
             e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Error saving data to file!", "Error", JOptionPane.ERROR_MESSAGE);
         }
-        ((DefaultTableModel) table.getModel()).addRow(new Object[]{nextID, fullname, gender, dateofbirth, phonenumber, address, username, password});
+        //an password
+        ((DefaultTableModel) table.getModel()).addRow(new Object[]{nextID, fullname, gender, dateofbirth, phonenumber, address, username, "***"});
         jTextField3.setText("");
         jTextField4.setText("");
         jTextField5.setText("");
@@ -458,6 +468,7 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
                 data.add(line.split(","));
             }
         } catch (IOException e) {
+            e.printStackTrace();
         }
         return data;
     }
@@ -490,6 +501,15 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
             }
         }
         return false;
+    }
+
+    private boolean isDuplicateUsername(String username) {
+        for (String[] record : readDataFromFile()) {
+            if (record.length > 6 && record[6].equals(username)) {
+                return true;
+            }
+        }
+        return false;
     }//GEN-LAST:event_button3ActionPerformed
 
     private void formAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_formAncestorAdded
@@ -506,7 +526,7 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
                 String phonenumber = data[4];
                 String address = data[5];
                 String username = data[6];
-                String password = data[7];
+                String password = "***"; //an password
                 DefaultTableModel model = (DefaultTableModel) table.getModel();
                 model.addRow(new Object[]{id, fullname, gender, dateofbirth, phonenumber, address, username, password});
             }
@@ -517,18 +537,6 @@ public class Form_Nhan_Vien extends javax.swing.JPanel {
                     "Error",
                     JOptionPane.ERROR_MESSAGE);
         }
-//         JFileChooser chooser = new JFileChooser();
-//        chooser.showOpenDialog(null);
-//        File f = chooser.getSelectedFile();
-//        String path = f.getAbsolutePath();
-//        try {
-//            BufferedImage bi = ImageIO.read(new File(path));
-//            Image img = bi.getScaledInstance(134, 172, Image.SCALE_SMOOTH);
-//            ImageIcon icon = new ImageIcon(img);
-//             jLabel12.setIcon(icon);
-//        } catch (IOException ex) {
-//            Logger.getLogger(Form_Nhan_Vien.class.getName()).log(Level.SEVERE, null, ex);
-//        }
     }//GEN-LAST:event_formAncestorAdded
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
