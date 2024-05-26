@@ -2,15 +2,19 @@
  |											    |
  |  User name: admin									    |
  |											    |
- |  Password: 1										    |
- |											    |
+ |  Password: 1                                                                             |
+ |										            |
+ |  (Or you can create your own account)                                                    |
+ |                                                                                          |
  |  -> Connect to Admin form								    |
  |											    |
  |------------------------------------------------------------------------------------------|
  |											    |
  |  User name: nhanvien									    |
  |											    |
- |  Password: 1										    |
+ |  Password: 1									            |
+ | 										            |
+ |  (Admin provides accounts for Staff)						            |
  |											    |
  |  -> Connect to Staff form								    |
  |											    |
